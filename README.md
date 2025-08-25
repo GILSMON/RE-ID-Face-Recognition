@@ -1,5 +1,5 @@
 ````markdown
-# Face Recognition and Tracking Project  
+## Face Recognition and Tracking Project  
 
 This repository contains a suite of scripts for **face recognition and tracking** using the **DeepFace** and **DeepSORT** algorithms.  
 It provides both **basic functionality** and **performance evaluation** of the implemented approaches.  
@@ -18,8 +18,8 @@ It provides both **basic functionality** and **performance evaluation** of the i
 
 Clone the repository:  
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/GILSMON/RE-ID-Face-Recognition
+cd RE-ID-Face-Recognition
 ````
 
 Create and activate a virtual environment:
@@ -110,6 +110,6 @@ python face_rec_deepSORT_tracking.py
 
 ---
 
-
+ 
 ---
 

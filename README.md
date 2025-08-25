@@ -1,13 +1,115 @@
-Face Recognition and Tracking ProjectThis repository contains a suite of scripts for face recognition and tracking using the DeepFace and DeepSORT algorithms. The project is structured to allow for both basic functionality and performance evaluation of the implemented algorithms.Getting StartedPrerequisitesTo get a copy of this project up and running on your local machine, you'll need Python 3.x and pip.InstallationClone the repository:git clone https://github.com/your-username/your-repository.git
-cd your-repository
-Create and activate a virtual environment:python -m venv venv
-# On Windows
-venv\Scripts\activate
-# On macOS/Linux
-source venv/bin/activate
-Install the required packages. You may need to create a requirements.txt file first by running pip freeze > requirements.txt if you have all your dependencies installed.pip install -r requirements.txt
-Project Structureface_rec_deepface_performance_track.py: This script is dedicated to face recognition using the DeepFace algorithm. It includes code to print performance metrics to the terminal and saves the output to a performance file.face_rec_deepface.py: This file also performs face recognition with the DeepFace algorithm but is a lighter version as it does not include the code for printing or saving performance metrics.face_rec_deepSORT_performence_track.py: This script integrates both DeepFace for recognition and DeepSORT for tracking. It is designed to track and evaluate the performance of this combined approach, including printing to the terminal and creating a performance file.face_rec_deepSORT_tracking.py: This file uses both DeepFace and DeepSORT for combined face recognition and tracking without the overhead of performance logging. It is ideal for general-purpose use.UsageInstructions on how to run the main scripts would go here. For example:# To run the DeepFace performance tracker
-python face_rec_deepface_performance_track.py
+````markdown
+# Face Recognition and Tracking Project  
 
-# To run the DeepSORT tracking script
+This repository contains a suite of scripts for **face recognition and tracking** using the **DeepFace** and **DeepSORT** algorithms.  
+It provides both **basic functionality** and **performance evaluation** of the implemented approaches.  
+
+---
+
+## 🚀 Getting Started  
+
+### ✅ Prerequisites  
+- Python **3.x**  
+- pip (Python package manager)  
+
+---
+
+### 🔧 Installation  
+
+Clone the repository:  
+```bash
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+````
+
+Create and activate a virtual environment:
+
+```bash
+# On Windows
+python -m venv venv
+venv\Scripts\activate
+
+# On macOS/Linux
+python -m venv venv
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+> 💡 If you don’t have a `requirements.txt`, you can generate one from your current environment:
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+## 📂 Project Structure
+
+```
+your-repository/
+│
+├── face_rec_deepface_performance_track.py      # DeepFace recognition + performance logging
+├── face_rec_deepface.py                        # Lightweight DeepFace recognition (no logging)
+├── face_rec_deepSORT_performance_track.py      # DeepFace + DeepSORT tracking + performance logging
+├── face_rec_deepSORT_tracking.py               # DeepFace + DeepSORT tracking (general use)
+├── requirements.txt                            # Project dependencies
+└── README.md                                   # Project documentation
+```
+
+---
+
+## ▶️ Usage
+
+Run the scripts as needed:
+
+### 1. DeepFace Recognition (with performance tracking)
+
+```bash
+python face_rec_deepface_performance_track.py
+```
+
+### 2. DeepFace Recognition (lightweight version)
+
+```bash
+python face_rec_deepface.py
+```
+
+### 3. DeepFace + DeepSORT (with performance tracking)
+
+```bash
+python face_rec_deepSORT_performance_track.py
+```
+
+### 4. DeepFace + DeepSORT (tracking only, no logging)
+
+```bash
 python face_rec_deepSORT_tracking.py
+```
+
+---
+
+## 📊 Features
+
+* ✅ Face detection & recognition with **DeepFace**
+* ✅ Face tracking across frames with **DeepSORT**
+* ✅ Performance evaluation (FPS, CPU, Memory usage)
+* ✅ Modular scripts for experimentation and lightweight usage
+
+---
+
+## 📝 Notes
+
+* Use the `*_performance_track.py` scripts when you need detailed performance metrics.
+* Use the lighter versions (`face_rec_deepface.py` / `face_rec_deepSORT_tracking.py`) for regular tracking tasks.
+* Works best with video inputs where consistent identity tracking is required.
+
+---
+
+
+---
+

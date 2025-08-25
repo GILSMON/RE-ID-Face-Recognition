@@ -1,0 +1,28 @@
+# Ignore the virtual environment folder
+venv/
+.venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# Ignore specific Python files requested
+
+open_cv_tracker_kcf.py
+open_cv_object_tracker.py
+re_id_face.py
+resources/generated_old_outputs
+
+# Ignore IDE-specific files for common editors (e.g., PyCharm, VS Code)
+.idea/
+.vscode/
+
+# Ignore other common project artifacts
+dist/
+build/
+
